@@ -19,6 +19,9 @@ export class MenuComponent implements OnInit {
   constructor() {
   }
 
+  close() {
+  }
+
   ngOnInit() {
   }
 
