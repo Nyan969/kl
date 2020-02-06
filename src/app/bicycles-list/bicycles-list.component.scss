@@ -44,8 +44,19 @@
   background-position: center;
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 969px) {
   .bicycles-list {
-    grid-template-columns: repeat(2, 242px);
+    grid-template-columns: repeat(2, 240px);
+    grid-gap: 20px;
   }
+
+  .bicycle-card__image {
+    height: 140px;
+    background-size: cover;
+    background-position: center;
+  }
+  .bicycle-card {
+    height: 188px;
+  }
+
 }

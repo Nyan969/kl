@@ -58,7 +58,11 @@
 }
 
 /* Responsive Styles */
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 969px) {
+  .banner-section__box {
+    max-width: 750px;
+    padding-bottom: 175px;
+  }
 
 }
 
