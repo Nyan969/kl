@@ -49,6 +49,12 @@
   border-right: none;
   border-left: none;
   border-bottom: 3px solid #b73913;
+  transition: backgroundcolor .2s ease 0s, opacity .25s ease 0s;
+}
+
+.advice:hover {
+  background-color: #d77d14;
+
 }
 
 /* Responsive Styles */

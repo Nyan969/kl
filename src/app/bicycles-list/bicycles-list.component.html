@@ -1,10 +1,12 @@
 <div class="bicycles-list">
   <div class="bicycle-card" *ngFor="let bikeCard of bikeCards; let i = index">
-    <div class="bicycle-card__image"></div>
-    <div class="bicycle-card__description">
-      <h3 class="bicycle-card__name">
-        <a>{{bikeCard.title}}</a>
-      </h3>
-    </div>
+    <a>
+      <div class="bicycle-card__image"></div>
+      <div class="bicycle-card__description">
+        <h3 class="bicycle-card__name">
+          <a>{{bikeCard.title}}</a>
+        </h3>
+      </div>
+    </a>
   </div>
 </div>

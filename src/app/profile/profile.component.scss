@@ -18,6 +18,8 @@
   font-weight: 100;
   margin-top: 17px;
   margin-bottom: 0;
+  transition: color .2s ease 0s, opacity .25s ease 0s;
+  cursor: pointer;
 }
 
 .profile__exit {
@@ -27,6 +29,8 @@
   border-bottom: 1px solid;
   width: 38px;
   color: #926f2b;
+  transition: color .2s ease 0s, opacity .25s ease 0s;
+  cursor: pointer;
 }
 
 .profile__photo {
@@ -53,4 +57,16 @@
 .profile__numberGoods {
   padding-bottom: 0;
   border-bottom: 1px solid #d8d8d8;
+  transition: color .2s ease 0s, opacity .25s ease 0s;
+}
+
+.profile__name:hover {
+  color: gray;
+}
+
+.profile__numberGoods:hover {
+  color: gray;
+}
+.profile__exit:hover {
+  color: darkgoldenrod;
 }

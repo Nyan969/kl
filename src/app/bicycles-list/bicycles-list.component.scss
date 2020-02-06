@@ -9,6 +9,7 @@
   width: 240px;
   background-color: #fff;
   height: 228px;
+  cursor: pointer;
 }
 
 .bicycle-card__name {
@@ -20,6 +21,11 @@
   color: #fff;
   font-weight: 400;
   white-space: nowrap;
+  transition: color .2s ease 0s, opacity .25s ease 0s;
+}
+
+.bicycle-card__name:hover {
+  color: #6c6c6c;
 }
 
 .bicycle-card__description {

@@ -48,6 +48,12 @@
   border-right: none;
   border-left: none;
   border-bottom: 3px solid #aa822d;
+  cursor: pointer;
+  transition: backgroundcolor .2s ease 0s, opacity .25s ease 0s;
+}
+
+.contacts__request-call:hover {
+  background-color: rgba(205, 69, 8, 0.87);
 }
 
 .contacts__text {

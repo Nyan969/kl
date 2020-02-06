@@ -38,3 +38,18 @@
   border-bottom: 1px  dashed #fffffd;
 
 }
+
+
+.link {
+  text-decoration: none;
+  transition: color .2s ease 0s, opacity .25s ease 0s;
+  cursor: pointer;
+}
+
+.link:hover {
+  color: gray;
+}
+
+.link_ad:hover {
+  color: green;
+}
