@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+
+let  visibility = true;
 
 @Component({
   selector: 'app-header',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+   // переключаем переменную
+  toggle() {
+    visibility = !visibility;
+  }
+
+  constructor() {
+  }
 
   ngOnInit() {
   }
 
 }
+
+export {visibility};

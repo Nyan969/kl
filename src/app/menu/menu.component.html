@@ -1,4 +1,4 @@
-<nav>
+<nav [ngClass]="{invisible: vis}">
   <ul class="menu">
     <li *ngFor="let menuItem of menuItems; let i = index">
      <a class="menu__item link" > {{menuItem.title}} </a>

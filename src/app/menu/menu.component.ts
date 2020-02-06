@@ -1,5 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {Menu} from '../app.component';
+import {MenuItems} from '../app.component';
+import {visibility} from '../header/header.component';
 
 @Component({
   selector: 'app-menu',
@@ -8,9 +9,15 @@ import {Menu} from '../app.component';
 })
 export class MenuComponent implements OnInit {
 
-  @Input() menuItems: Menu[] = [];
+  @Input() menuItems: MenuItems[] = [];
 
-  constructor() { }
+  @Input()
+  get vis() {
+    return visibility;
+  }
+
+  constructor() {
+  }
 
   ngOnInit() {
   }

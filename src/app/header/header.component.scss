@@ -1,7 +1,40 @@
 .header {
   height: 56px;
   display: flex;
-  justify-content: center;
   align-items: center;
   background-color: #362f2d;
+  padding: 0 calc((100% - 980px)/2);
+  position: relative;
+}
+
+.header__logo {
+  margin-right: 60px;
+}
+
+.header__menu-bar {
+  margin-right: 33px;
+  font-size: 15px;
+  color: #fefeff;
+  font-weight: 500;
+}
+
+.header__ad {
+  font-size: 15px;
+  color: #c7ff00;
+  font-weight: 500;
+}
+
+.header__town {
+  font-size: 15px;
+  position: absolute;
+  right: calc(((100% - 980px)/2) + 23px);
+  top: 15%;
+  color: #fefeff;
+  font-weight: 500;
+}
+
+.header__city-name {
+  padding-bottom: 0;
+  border-bottom: 1px  dashed #fffffd;
+
 }

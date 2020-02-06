@@ -1,8 +1,9 @@
 import {Component} from '@angular/core';
 
-export interface Menu {
+export interface MenuItems {
   title: string;
 }
+
 export interface Bikes {
   title: string;
 }
@@ -13,11 +14,12 @@ export interface Bikes {
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  public menuItems: Menu[] = [
+  public menuItems: MenuItems[] = [
     {title: 'пункт первый'},
     {title: 'пункт второй'},
     {title: 'пункт третий'}
   ];
+
   public bikeCards: Bikes[] = [
     {title: 'Городские'},
     {title: 'Горные / Универсальные'},

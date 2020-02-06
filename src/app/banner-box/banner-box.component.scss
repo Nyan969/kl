@@ -6,33 +6,48 @@
 
 .delivery__text {
   margin: 27px 0;
+  font-weight: 500;
 }
+
 .delivery__text:nth-child(2) {
   margin: 27px 15px;
 
 }
+
 .contacts {
   display: flex;
   align-items: center;
 }
+
 .shortInfo {
   display: flex;
   justify-content: space-between;
 }
-.contacts__phone-box{
+
+.contacts__phone-box {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-right: 15px;
   margin-left: 50px;
 }
-.contacts__phone{
+
+.contacts__phone {
   margin: 3px 0 0 0;
   font-size: 21px;
+  font-weight: 500;
 }
 
 .contacts__request-call {
   width: 160px;
+  height: 33px;
+  font-size: 17px;
+  color: #fffffb;
+  background-color: #cd9933;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 3px solid #aa822d;
 }
 
 .contacts__text {
@@ -40,5 +55,23 @@
 }
 
 .search__input-container {
-  max-width: 716px;
+  max-width: 701px;
+}
+
+.search__input {
+  background-image: url(../../images/search.png);
+  height: 35px;
+  width: 100%;
+  background-position: right 1rem top 0.6rem;
+  background-repeat: no-repeat;
+  background-size: 1.2rem;
+  background-origin: border-box;
+  border: none;
+  font-size: 16px;
+  padding-left: 15px;
+}
+
+.search__input:hover {
+  background-size: 1.5rem;
+  background-position: right 1rem top 0.4rem;
 }
