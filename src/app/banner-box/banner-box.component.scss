@@ -1,0 +1,44 @@
+.delivery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.delivery__text {
+  margin: 27px 0;
+}
+.delivery__text:nth-child(2) {
+  margin: 27px 15px;
+
+}
+.contacts {
+  display: flex;
+  align-items: center;
+}
+.shortInfo {
+  display: flex;
+  justify-content: space-between;
+}
+.contacts__phone-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 15px;
+  margin-left: 50px;
+}
+.contacts__phone{
+  margin: 3px 0 0 0;
+  font-size: 21px;
+}
+
+.contacts__request-call {
+  width: 160px;
+}
+
+.contacts__text {
+  font-size: 12px;
+}
+
+.search__input-container {
+  max-width: 716px;
+}

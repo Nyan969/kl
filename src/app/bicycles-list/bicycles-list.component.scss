@@ -1,0 +1,37 @@
+.bicycles-list {
+    display: grid;
+    grid-template-columns: repeat(4, 242px);
+    grid-gap: 2px;
+    justify-content: center;
+}
+
+.bicycle-card {
+  width: 240px;
+  background-color: #fff;
+  height: 228px;
+}
+
+.bicycle-card__name {
+  margin: 0;
+  font-size: 16px;
+  line-height: 25px;
+  padding-bottom: 0;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+}
+
+.bicycle-card__description {
+  display: flex;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 0 22px;
+  background-color: #362f2d;
+}
+
+.bicycle-card__image {
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+}

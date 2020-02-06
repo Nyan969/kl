@@ -1,0 +1,32 @@
+.menu {
+ // display: none;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 2;
+  background-color: white;
+  width: 300px;
+  height: auto;
+  margin: 0;
+}
+
+.menu__item {
+  font-size: 18px;
+  line-height: 24px;
+  margin-left: 36px;
+}
+
+.link {
+  color: #000;
+  text-decoration: none;
+  transition: color .2s ease 0s, opacity .25s ease 0s;
+  cursor: pointer;
+}
+
+.link:hover {
+  color: deeppink;
+}
