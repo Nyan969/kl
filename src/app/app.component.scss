@@ -61,7 +61,10 @@
 @media screen and (max-width: 969px) {
   .banner-section__box {
     max-width: 750px;
-    padding-bottom: 175px;
+    padding-bottom: 3px;
+    width: 100%;
+    justify-content: space-between;
+
   }
 
 }

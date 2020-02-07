@@ -60,7 +60,7 @@
   font-size: 12px;
 }
 
-.search__input-container {
+.search {
   max-width: 701px;
 }
 
@@ -80,4 +80,30 @@
 .search__input:hover {
   background-size: 1.5rem;
   background-position: right 1rem top 0.4rem;
+}
+
+
+@media screen and (max-width: 969px) {
+  .delivery {
+    display: none;
+  }
+  .shortInfo {
+    padding: 15px 0;
+    width: 495px;
+  }
+  .banner-box {
+    width: 480px;
+  }
+
+  .contacts {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .contacts__phone-box {
+    margin-left: 0;
+  }
+
+  .contacts__request-call {
+
+  }
 }

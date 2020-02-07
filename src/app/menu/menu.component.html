@@ -1,4 +1,5 @@
-<nav [ngClass]="{invisible:vis}">
+<!--<nav [ngClass]="{invisible:vis()}">-->
+<nav [style.display]=" res ==true?'block':'none'">
   <ul class="menu" (mouseleave)="close()">
     <li *ngFor="let menuItem of menuItems; let i = index">
      <a class="menu__item link" > {{menuItem.title}} </a>

@@ -53,3 +53,20 @@
 .link_ad:hover {
   color: green;
 }
+
+@media screen and (max-width: 969px) {
+  .header {
+    padding: 0 calc((100% - 750px)/2);
+  }
+
+  .header__logo {
+    margin-right: 54px;
+  }
+
+  .header__town {
+    right: calc(((100% - 750px)/2) + 23px);
+  }
+
+}
+
+
