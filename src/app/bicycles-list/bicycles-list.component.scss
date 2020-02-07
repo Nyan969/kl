@@ -1,8 +1,8 @@
 .bicycles-list {
-    display: grid;
-    grid-template-columns: repeat(4, 242px);
-    grid-gap: 2px;
-    justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(4, 242px);
+  grid-gap: 2px;
+  justify-content: center;
 }
 
 .bicycle-card {
@@ -10,6 +10,7 @@
   background-color: #fff;
   height: 228px;
   cursor: pointer;
+  z-index: 1;
 }
 
 .bicycle-card__name {
@@ -57,6 +58,56 @@
   }
   .bicycle-card {
     height: 188px;
+  }
+
+}
+
+@media screen and (max-width: 740px) {
+  .bicycles-list {
+    grid-template-columns: repeat(1, 380px);
+    grid-gap: 10px 0;
+  }
+
+  .bicycle-card {
+    display: flex;
+    width: 380px;
+    height: 75px;
+    flex-direction: row;
+  }
+
+  .bicycle-card__image {
+    height: 75px;
+    width: 120px;
+    flex: 0 120px;
+  }
+
+  .bicycle-card__description {
+    height: 75px;
+    flex: 1 auto;
+  }
+
+}
+
+
+@media screen and (max-width: 450px) {
+  .bicycles-list {
+    grid-template-columns: repeat(1, 320px);
+    grid-gap: 10px 0;
+  }
+
+  .bicycle-card {
+    width: 320px;
+  }
+
+  .bicycle-card__name {
+    white-space: normal;
+    border-bottom: none;
+    text-decoration: underline;
+  }
+
+  .bicycle-card__description {
+    padding: 0 20px;
+    max-width: 200px;
   }
 
 }

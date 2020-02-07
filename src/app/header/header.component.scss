@@ -69,4 +69,36 @@
 
 }
 
+@media screen and (max-width: 740px) {
+  .header__ad {
+    display: none;
+  }
+
+  .header {
+    justify-content: space-between;
+    padding: 0 calc((100% - 480px)/2);
+  }
+
+  .header__logo {
+    margin-right: 0;
+  }
+
+  .header__menu-bar {
+    margin-right: 0;
+  }
+
+  .header__town {
+    position: static;
+  }
+
+}
+
+@media screen and (max-width: 450px) {
+  .header {
+    padding: 0 calc((100% - 320px)/2);
+  }
+  .header__town {
+    display: none;
+  }
+}
 

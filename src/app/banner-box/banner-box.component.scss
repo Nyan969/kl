@@ -58,6 +58,7 @@
 
 .contacts__text {
   font-size: 12px;
+  white-space: nowrap;
 }
 
 .search {
@@ -89,10 +90,14 @@
   }
   .shortInfo {
     padding: 15px 0;
-    width: 495px;
+    max-width: 495px;
+    flex: 1;
+
   }
   .banner-box {
-    width: 480px;
+    max-width: 480px;
+    width: 100%;
+
   }
 
   .contacts {
@@ -102,8 +107,14 @@
   .contacts__phone-box {
     margin-left: 0;
   }
+}
 
-  .contacts__request-call {
-
+@media screen and (max-width: 740px) {
+  .search {
+    max-width: 380px;
+  }
+  .search__input {
+    width: -webkit-fill-available;
+    padding-left: 15px;
   }
 }

@@ -70,3 +70,11 @@
 .profile__exit:hover {
   color: darkgoldenrod;
 }
+
+@media screen and (max-width: 740px) {
+  .profile {
+    max-width: 380px;
+    margin: 0;
+    width: 100%;
+  }
+}
