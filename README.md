@@ -1,4 +1,4 @@
-#[gh-pages] (https://nyan969.github.io/kl/)
+# [pages](https://nyan969.github.io/kl/)
 # Kl
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.24.
