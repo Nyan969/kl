@@ -54,6 +54,14 @@
   color: green;
 }
 
+.link:active {
+  color: #b9b9b9;
+}
+
+.link_ad:active {
+  color: #00c200;
+}
+
 @media screen and (max-width: 969px) {
   .header {
     padding: 0 calc((100% - 750px)/2);

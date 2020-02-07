@@ -31,12 +31,19 @@ li {
 .link {
   color: #000;
   text-decoration: none;
-  transition: color .2s ease 0s, opacity .25s ease 0s;
+  transition: color .2s ease 0s, opacity .25s ease 0s, backgroundcolor .3s ease 1s, opacity .25s ease 0.1s;
   cursor: pointer;
 }
 
 .link:hover {
-  color: gray;
+  color: #2d252b;
+  background-color: #c4a4bf;
+}
+
+.link:active {
+  color: #494949;
+  background-color: #9eb0c4;
+
 }
 
 
