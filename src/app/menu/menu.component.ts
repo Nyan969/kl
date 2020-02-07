@@ -18,7 +18,6 @@ export class MenuComponent implements OnInit {
   }
 
   close() {
-    this.res = !this.res;
   }
 
   ngOnInit() {
