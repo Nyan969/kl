@@ -8,7 +8,8 @@ let  visibility = false;
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-
+  // @ts-ignore
+  logoImage: any = require('../../images/logo.png');
    // переключаем переменную
   toggle() {
     visibility = !visibility;

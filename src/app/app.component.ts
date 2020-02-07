@@ -26,6 +26,8 @@ export class AppComponent {
     {title: 'Шоссейные / Триатлон'},
     {title: 'Экстрим (BMX)'}
   ];
+
+
 }
 
 // todo сделать закрытие меню (mouseleave)
