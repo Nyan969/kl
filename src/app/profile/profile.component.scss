@@ -74,7 +74,12 @@
 @media screen and (max-width: 740px) {
   .profile {
     max-width: 380px;
-    margin: 0;
+    margin: 0 0 20px;
     width: 100%;
+    height: 120px;
+  }
+
+  .profile__basket-text{
+    margin: 22px 0 0;
   }
 }

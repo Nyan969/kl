@@ -45,6 +45,20 @@
   background-position: center;
 }
 
+.bicycle-card__image[class*="0"] {
+ background-image: url("../../images/1.jpg");
+}
+.bicycle-card__image[class*="1"] {
+ background-image: url("../../images/2.jpg");
+}
+.bicycle-card__image[class*="2"] {
+ background-image: url("../../images/3.jpg");
+}
+.bicycle-card__image[class*="3"] {
+ background-image: url("../../images/4.jpg");
+}
+
+
 @media screen and (max-width: 969px) {
   .bicycles-list {
     grid-template-columns: repeat(2, 240px);
@@ -66,48 +80,52 @@
   .bicycles-list {
     grid-template-columns: repeat(1, 380px);
     grid-gap: 10px 0;
+    margin-bottom: 20px;
   }
 
   .bicycle-card {
     display: flex;
     width: 380px;
-    height: 75px;
+    height: 70px;
     flex-direction: row;
   }
 
   .bicycle-card__image {
-    height: 75px;
+    height: 70px;
     width: 120px;
     flex: 0 120px;
   }
 
   .bicycle-card__description {
-    height: 75px;
+    height: 70px;
     flex: 1 auto;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
   }
 
-}
+  .bicycle-card__name {
+    white-space: normal;
+  }
 
+
+}
 
 @media screen and (max-width: 450px) {
   .bicycles-list {
     grid-template-columns: repeat(1, 320px);
     grid-gap: 10px 0;
+    margin-bottom: 21px;
   }
 
   .bicycle-card {
     width: 320px;
   }
 
-  .bicycle-card__name {
-    white-space: normal;
-    border-bottom: none;
-    text-decoration: underline;
-  }
-
   .bicycle-card__description {
     padding: 0 20px;
     max-width: 200px;
+
   }
 
 }

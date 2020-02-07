@@ -10,11 +10,13 @@ import {visibility} from '../header/header.component';
 export class MenuComponent implements OnInit {
 
   @Input() menuItems: MenuItems[] = [];
-  @Input() res = visibility;
+  @Input() res() {
+    return visibility;
+  }
 
   constructor() {
   }
-//todo сделать меню
+
   close() {
     this.res = !this.res;
   }
