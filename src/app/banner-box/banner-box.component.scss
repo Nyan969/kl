@@ -54,13 +54,20 @@
 
 .contacts__request-call:hover {
   background-color: rgba(205, 69, 8, 0.87);
+  border-bottom: 3px solid rgba(205, 59, 14, 0.87);
+
+}
+.contacts__request-call:active {
+  background-color: #aa822d;
+  border-bottom: 3px solid #6e4b26;
 }
 
 .contacts__text {
   font-size: 12px;
+  white-space: nowrap;
 }
 
-.search__input-container {
+.search {
   max-width: 701px;
 }
 
@@ -80,4 +87,45 @@
 .search__input:hover {
   background-size: 1.5rem;
   background-position: right 1rem top 0.4rem;
+}
+.search__input:focus {
+  background-size: 1.5rem;
+  background-position: right 1rem top 0.4rem;
+  background-color: #d4eaff;
+}
+
+
+@media screen and (max-width: 969px) {
+  .delivery {
+    display: none;
+  }
+  .shortInfo {
+    padding: 15px 0;
+    max-width: 495px;
+    flex: 1;
+
+  }
+  .banner-box {
+    max-width: 480px;
+    width: 100%;
+
+  }
+
+  .contacts {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .contacts__phone-box {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .search {
+    max-width: 380px;
+  }
+  .search__input {
+    width: -webkit-fill-available;
+    padding-left: 15px;
+  }
 }

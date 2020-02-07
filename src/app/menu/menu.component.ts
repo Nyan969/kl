@@ -10,9 +10,7 @@ import {visibility} from '../header/header.component';
 export class MenuComponent implements OnInit {
 
   @Input() menuItems: MenuItems[] = [];
-
-  @Input()
-  get vis() {
+  @Input() res() {
     return visibility;
   }
 

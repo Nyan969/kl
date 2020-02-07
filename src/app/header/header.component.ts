@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 
-let  visibility = true;
+let  visibility = false;
 
 @Component({
   selector: 'app-header',
