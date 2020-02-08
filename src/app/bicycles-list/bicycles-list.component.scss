@@ -11,6 +11,19 @@
   height: 228px;
   cursor: pointer;
   z-index: 1;
+  position: relative;
+}
+
+.bicycle-card:hover::after{
+  content: '';
+  display: block;
+  width: 242px;
+  height: 228px;
+  background-color: rgba(0, 0, 0, .3);
+  color: #6c6c6c;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .bicycle-card__name {
@@ -23,8 +36,11 @@
   font-weight: 400;
   white-space: nowrap;
   transition: color .2s ease 0s, opacity .25s ease 0s;
+  text-decoration: none;
 }
-
+.bicycle-card__name:visited {
+  color: #fff;
+}
 
 .bicycle-card__description {
   display: flex;
@@ -37,19 +53,11 @@
 }
 
 .bicycle-card__image {
-  position: relative;
   height: 180px;
   background-size: cover;
   background-position: center;
 }
-.bicycle-card__image:hover::after{
-  content: '';
-  display: block;
-  width: 242px;
-  height: 228px;
-  background-color: rgba(0, 0, 0, .3);
-  color: #6c6c6c;
-}
+
 .bicycle-card__image[class*="0"] {
  background-image: url("../../images/1.jpg");
 }
@@ -78,7 +86,7 @@
   .bicycle-card {
     height: 188px;
   }
-  .bicycle-card__image:hover::after{
+  .bicycle-card:hover::after{
     height: 188px;
   }
 }
@@ -102,7 +110,7 @@
     width: 120px;
     flex: 0 120px;
   }
-  .bicycle-card__image:hover::after{
+  .bicycle-card:hover::after{
     width: 380px;
     height: 70px;
   }
@@ -131,7 +139,7 @@
   .bicycle-card {
     width: 320px;
   }
-  .bicycle-card__image:hover::after{
+  .bicycle-card:hover::after{
     width: 320px;
   }
   .bicycle-card__description {

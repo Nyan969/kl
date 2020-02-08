@@ -53,14 +53,20 @@
 
 }
 
-
 .link {
   text-decoration: none;
   transition: color .2s ease 0s, opacity .25s ease 0s;
   cursor: pointer;
 }
+.link:visited, .header__city-name:visited {
+  color: #fefeff;
+}
 
-.link:hover {
+.link_ad:visited {
+  color: #c7ff00;
+}
+
+.link:hover .header__city-name:hover{
   color: gray;
 }
 
@@ -68,7 +74,7 @@
   color: green;
 }
 
-.link:active {
+.link:active .header__city-name:active {
   color: #b9b9b9;
 }
 
