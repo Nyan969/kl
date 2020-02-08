@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 
-let  visibility = false;
+let visibility = false;
 
 @Component({
   selector: 'app-header',
@@ -10,12 +10,14 @@ let  visibility = false;
 export class HeaderComponent implements OnInit {
   // @ts-ignore
   logoImage: any = require('../../images/logo.png');
-   // переключаем переменную
-  toggle() {
-    visibility = !visibility;
-  }
+
+  // переключаем переменную
 
   constructor() {
+  }
+
+  t() {
+    toggle();
   }
 
   ngOnInit() {
@@ -23,4 +25,8 @@ export class HeaderComponent implements OnInit {
 
 }
 
-export {visibility};
+function toggle() {
+  visibility = !visibility;
+}
+
+export {toggle, visibility};

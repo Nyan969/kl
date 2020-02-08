@@ -1,6 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {MenuItems} from '../app.component';
-import {visibility} from '../header/header.component';
+import {toggle, visibility} from '../header/header.component';
 
 @Component({
   selector: 'app-menu',
@@ -11,22 +11,16 @@ import {visibility} from '../header/header.component';
 export class MenuComponent implements OnInit {
 
   @Input() menuItems: MenuItems[] = [];
-  private vis: boolean;
 
   constructor() {
   }
 
   toggle() {
-
-    this.open(true);
+    toggle();
   }
 
-  open(a) {
-    if (a) {
-      return a;
-    }
-    this.vis = visibility;
-    return this.vis;
+  open() {
+    return visibility;
   }
 
   ngOnInit() {
