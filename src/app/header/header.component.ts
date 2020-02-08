@@ -16,7 +16,7 @@ export class HeaderComponent implements OnInit {
   constructor() {
   }
 
-  t() {
+  tog() {
     toggle();
   }
 

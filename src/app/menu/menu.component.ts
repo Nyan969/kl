@@ -15,7 +15,7 @@ export class MenuComponent implements OnInit {
   constructor() {
   }
 
-  toggle() {
+  tog() {
     toggle();
   }
 

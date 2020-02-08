@@ -28,5 +28,3 @@ export class AppComponent {
   ];
 
 }
-
-// todo сделать закрытие меню (mouseleave)
