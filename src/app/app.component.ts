@@ -27,7 +27,6 @@ export class AppComponent {
     {title: 'Экстрим (BMX)'}
   ];
 
-
 }
 
 // todo сделать закрытие меню (mouseleave)

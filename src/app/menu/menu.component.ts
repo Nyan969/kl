@@ -10,14 +10,20 @@ import {visibility} from '../header/header.component';
 export class MenuComponent implements OnInit {
 
   @Input() menuItems: MenuItems[] = [];
+
   @Input() res() {
     return visibility;
+  }
+
+  @Input() vis() {
+    return this.res();
   }
 
   constructor() {
   }
 
   close() {
+    return !this.vis();
   }
 
   ngOnInit() {
