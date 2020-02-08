@@ -7,23 +7,26 @@ import {visibility} from '../header/header.component';
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.scss']
 })
+
 export class MenuComponent implements OnInit {
 
   @Input() menuItems: MenuItems[] = [];
-
-  @Input() res() {
-    return visibility;
-  }
-
-  @Input() vis() {
-    return this.res();
-  }
+  private vis: boolean;
 
   constructor() {
   }
 
-  close() {
-    return !this.vis();
+  toggle() {
+
+    this.open(true);
+  }
+
+  open(a) {
+    if (a) {
+      return a;
+    }
+    this.vis = visibility;
+    return this.vis;
   }
 
   ngOnInit() {

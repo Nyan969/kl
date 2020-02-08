@@ -1,5 +1,5 @@
 .menu {
-   display: flex;
+   display: none;
   flex-direction: column;
   list-style-type: none;
   padding: 0;
@@ -46,6 +46,9 @@ li {
 
 }
 
+//.visible {
+//  display: flex;
+//}
 
 @media screen and (max-width: 969px) {
   .menu {

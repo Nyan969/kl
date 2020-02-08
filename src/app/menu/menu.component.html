@@ -1,8 +1,8 @@
 <!--<nav [ngClass]="{invisible:vis()}">-->
-<nav [style.display]=" vis() ===true?'block':'none'">
-  <ul class="menu" (mouseleave)="close()">
+<nav [style.display]="vis==false?'none':''" (mouseleave)="toggle()">
+  <ul class="menu"  [style.display]="open(false)==true?'flex':''"  >
     <li *ngFor="let menuItem of menuItems; let i = index">
-     <a class="menu__item link"  (click)="close()"> {{menuItem.title}} </a>
+     <a class="menu__item link"  (click)="toggle()"> {{menuItem.title}} </a>
     </li>
   </ul>
 </nav>
